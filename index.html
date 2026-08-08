@@ -60,6 +60,12 @@
     @keyframes rise{from{height:0!important}}
     .bar-label{font-size:13px;color:var(--text);white-space:nowrap}
     .chart-note{font-size:12px;color:var(--text);margin:16px 0 0}
+    .compare-legend{display:flex;justify-content:flex-end;gap:16px;font-size:11px;color:var(--text);margin-bottom:18px}
+    .compare-legend span{display:flex;align-items:center;gap:6px}.compare-legend i{width:18px;height:6px;background:var(--line)}
+    .compare-legend span:last-child i{background:var(--teal)}
+    .compare-row{display:grid;grid-template-columns:78px 1fr 24px;gap:10px;align-items:center;margin:17px 0;font-size:13px}
+    .compare-bars{display:grid;gap:5px}.compare-bar{height:7px;background:var(--line)}.compare-bar.current{background:var(--teal)}
+    .compare-value{text-align:right;font-weight:800;color:var(--dark)}
     .kanban{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
     .lane{background:rgba(251,250,246,.62);border-top:3px solid var(--line);padding:22px}
     .lane.doing{border-color:var(--gold)}
@@ -118,46 +124,45 @@
         <p>以真实临床问题为起点，建立科研、数据分析和神经信号能力，最终参与脑机接口与神经接口的临床转化。</p>
       </div>
       <div class="hero-note">
-        <strong>当前核心阶段：科研生产力打底</strong>
-        近期优先顺序：短周期论文 → 临床数据库能力 → 神经工程基础。长期方向明确，但不抢占当前论文主线。
+        <strong>当前核心阶段：CES 课题落地准备</strong>
+        导师与西京平台已经确定。近期优先顺序：文献侦察 → 数据可得性核查 → 首次科研谈话材料；神经工程保持短时连续学习。
       </div>
     </div>
 
     <section class="wrap">
       <div class="section-head">
         <div><div class="eyebrow">Biweekly review</div><h2>最近两周摘要</h2></div>
-        <span class="update-pill">更新至 2026.07.25</span>
+        <span class="update-pill">更新至 2026.08.08</span>
       </div>
       <div class="summary-grid">
-        <div class="metric"><div class="num">4</div><div class="label">学习主线</div><div class="sub">科研 · Python · 神经工程 · AI 工具</div></div>
-        <div class="metric"><div class="num">1</div><div class="label">主文献首轮完成</div><div class="sub">ODI MCID 预测因素研究</div></div>
-        <div class="metric"><div class="num">3</div><div class="label">EMG 核心单元</div><div class="sub">运动单位 · 神经根损伤 · 再支配</div></div>
-        <div class="metric"><div class="num">5</div><div class="label">Pandas 能力节点</div><div class="sub">筛选 · 排序 · 新变量 · 缺失 · Table 1</div></div>
+        <div class="metric"><div class="num">1</div><div class="label">核心课题收敛</div><div class="sub">CES：单纯减压/髓核摘除 vs TLIF</div></div>
+        <div class="metric"><div class="num">V2</div><div class="label">研究骨架形成</div><div class="sub">对象 · 分组 · 结局 · 影像变量</div></div>
+        <div class="metric"><div class="num">5y</div><div class="label">拟建回顾性队列</div><div class="sub">西京医院 2021—2025</div></div>
+        <div class="metric"><div class="num">12d</div><div class="label">谈话准备窗口</div><div class="sub">预计约 8 月 20 日首次科研谈话</div></div>
       </div>
     </section>
 
     <section id="progress" class="wrap">
       <div class="section-head">
         <div><div class="eyebrow">Capability dashboard</div><h2>能力进度</h2></div>
-        <p>进度代表当前入门阶段的能力节点完成度，不代表该学科的终极掌握程度。统计周期：2026.07.12—07.25。</p>
+        <p>进度代表当前入门阶段的能力节点完成度，不代表该学科的终极掌握程度。统计周期：2026.07.26—08.08。</p>
       </div>
       <div class="progress-layout">
         <div class="card">
           <div class="card-title"><h3>四领域进度</h3><span>本阶段目标完成度</span></div>
-          <div class="skill"><div class="skill-meta"><strong>临床科研设计</strong><span>62%</span></div><div class="track"><div class="fill" style="width:62%"></div></div></div>
-          <div class="skill"><div class="skill-meta"><strong>Python 与数据分析</strong><span>48%</span></div><div class="track"><div class="fill" style="width:48%;animation-delay:.08s"></div></div></div>
-          <div class="skill"><div class="skill-meta"><strong>神经工程基础</strong><span>32%</span></div><div class="track"><div class="fill" style="width:32%;animation-delay:.16s"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>临床科研设计</strong><span>74%</span></div><div class="track"><div class="fill" style="width:74%"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>Python 与数据分析</strong><span>54%</span></div><div class="track"><div class="fill" style="width:54%;animation-delay:.08s"></div></div></div>
+          <div class="skill"><div class="skill-meta"><strong>神经工程基础</strong><span>36%</span></div><div class="track"><div class="fill" style="width:36%;animation-delay:.16s"></div></div></div>
           <div class="skill"><div class="skill-meta"><strong>AI 工具与任务表达</strong><span>45%</span></div><div class="track"><div class="fill" style="width:45%;animation-delay:.24s"></div></div></div>
         </div>
         <div class="card">
-          <div class="card-title"><h3>本期学习单元</h3><span>按已确认记录计数</span></div>
-          <div class="chart" aria-label="四个学习领域的已完成单元数柱状图">
-            <div class="bar-col"><div class="bar" data-value="4" style="height:76%"></div><div class="bar-label">科研</div></div>
-            <div class="bar-col"><div class="bar" data-value="5" style="height:94%;animation-delay:.08s"></div><div class="bar-label">Python</div></div>
-            <div class="bar-col"><div class="bar" data-value="3" style="height:58%;animation-delay:.16s"></div><div class="bar-label">神经工程</div></div>
-            <div class="bar-col"><div class="bar" data-value="2" style="height:40%;animation-delay:.24s"></div><div class="bar-label">AI 工具</div></div>
-          </div>
-          <p class="chart-note">未记录精确学习时长，因此本期按完成的主题/能力节点统计，避免制造虚假精度。</p>
+          <div class="card-title"><h3>双周推进重心</h3><span>已确认成果计数</span></div>
+          <div class="compare-legend"><span><i></i>07.12—07.25</span><span><i></i>07.26—08.08</span></div>
+          <div class="compare-row"><span>科研设计</span><div class="compare-bars"><div class="compare-bar" style="width:80%"></div><div class="compare-bar current" style="width:100%"></div></div><span class="compare-value">5</span></div>
+          <div class="compare-row"><span>数据统计</span><div class="compare-bars"><div class="compare-bar" style="width:100%"></div><div class="compare-bar current" style="width:40%"></div></div><span class="compare-value">2</span></div>
+          <div class="compare-row"><span>神经工程</span><div class="compare-bars"><div class="compare-bar" style="width:60%"></div><div class="compare-bar current" style="width:20%"></div></div><span class="compare-value">1</span></div>
+          <div class="compare-row"><span>AI 工具</span><div class="compare-bars"><div class="compare-bar" style="width:40%"></div><div class="compare-bar current" style="width:0%"></div></div><span class="compare-value">0</span></div>
+          <p class="chart-note">本期明显转向课题落地。未记录精确学习时长，图表继续按可核实的成果/能力节点统计。</p>
         </div>
       </div>
     </section>
@@ -165,27 +170,29 @@
     <section id="tasks" class="wrap">
       <div class="section-head">
         <div><div class="eyebrow">Execution board</div><h2>任务看板</h2></div>
-        <p>下一周期仍以论文与科研方法为主；神经工程保持短时、连续学习，不挤占主线。</p>
+        <p>下一周期目标非常明确：在首次科研谈话前，回答“病例找不找得到、关键变量齐不齐、研究能不能做”。</p>
       </div>
       <div class="kanban">
         <div class="lane">
-          <div class="lane-head"><h3>待开始</h3><span class="count">3</span></div>
-          <article class="task"><div class="tag">RESEARCH</div><h4>确定首个可落地硕士课题</h4><p>结合导师资源，在 ODI MCID 回顾研究与术前预测因素 Scoping Review 中优先落地一个。</p></article>
-          <article class="task"><div class="tag">PYTHON</div><h4>进入回归分析代码阅读</h4><p>用真实临床变量理解 Logistic 回归建模、OR、95%CI 与结果导出。</p></article>
-          <article class="task"><div class="tag">DATA</div><h4>建立标准变量字典模板</h4><p>统一变量名、类型、时间点、缺失编码和结局定义。</p></article>
+          <div class="lane-head"><h3>待开始</h3><span class="count">4</span></div>
+          <article class="task"><div class="tag">LITERATURE</div><h4>侦察 CES 关键文献</h4><p>重点阅读王秋实团队系列研究，明确既有队列、结局定义与可升级空间。</p></article>
+          <article class="task"><div class="tag">FEASIBILITY</div><h4>核查 2021—2025 病例可得性</h4><p>先查样本量、两种术式分布、CES-I/CES-R 与随访资料，不默认 ODI 完整。</p></article>
+          <article class="task"><div class="tag">MEETING</div><h4>准备首次科研谈话材料</h4><p>用一页纸呈现研究问题、现有证据、数据清单、主要风险与需要导师确认的问题。</p></article>
+          <article class="task"><div class="tag">MAIN ARTICLE</div><h4>完成主文献 Discussion 闭环</h4><p>补完结果解释、局限性与可借鉴点，把单篇精读控制在约 5 小时内。</p></article>
         </div>
         <div class="lane doing">
           <div class="lane-head"><h3>进行中</h3><span class="count">3</span></div>
-          <article class="task"><div class="tag">LITERATURE</div><h4>精读 ODI MCID 主文献</h4><p>已完成第一轮；正在理解 Methods、变量筛选和多因素 Logistic 回归。</p></article>
-          <article class="task"><div class="tag">IDEA PIPELINE</div><h4>临床问题筛选与课题化</h4><p>保留侧弯术后代偿、突出物钙化机制及腰椎结局预测等候选方向。</p></article>
-          <article class="task"><div class="tag">NEURO</div><h4>EMG 与失神经/再支配</h4><p>从神经根损伤的针极 EMG 表现，继续过渡到神经信号基础。</p></article>
+          <article class="task"><div class="tag">CES V2</div><h4>细化不同术式疗效比较</h4><p>核心比较：单纯髓核摘除/减压 vs TLIF；巨大型突出作为影像变量而非纳入前提。</p></article>
+          <article class="task"><div class="tag">DATA DICTIONARY</div><h4>建立 CES 变量字典</h4><p>优先分型、发病至手术时间、术式决策原因、神经功能结局与突出物占椎管比例。</p></article>
+          <article class="task"><div class="tag">METHODS</div><h4>控制术式选择偏倚</h4><p>梳理术前严重程度、不稳/滑脱、退变程度与选择 TLIF 的原因，避免把治疗选择误当疗效。</p></article>
         </div>
         <div class="lane done">
-          <div class="lane-head"><h3>本期完成</h3><span class="count">4</span></div>
-          <article class="task"><div class="tag">PYTHON</div><h4>DataFrame 选择、筛选与排序</h4><p>能审核年龄/BMI 条件筛选、改善值计算和结果导出任务。</p></article>
-          <article class="task"><div class="tag">DATA QUALITY</div><h4>缺失数据审计逻辑</h4><p>掌握 isna、行级缺失、缺失比例及 MCAR/MAR/MNAR 基础。</p></article>
-          <article class="task"><div class="tag">STATISTICS</div><h4>单因素与多因素变量选择</h4><p>理解“单因素显著”不等于“独立预测因素”。</p></article>
-          <article class="task"><div class="tag">AI WORKFLOW</div><h4>Codex 临床任务说明训练</h4><p>能写清输入、字段、公式、原表保护、输出位置与审核要点。</p></article>
+          <div class="lane-head"><h3>本期完成</h3><span class="count">5</span></div>
+          <article class="task"><div class="tag">PLATFORM</div><h4>导师与研究平台确定</h4><p>硕士阶段现实执行基础已经明确，研究规划进入可落地阶段。</p></article>
+          <article class="task"><div class="tag">RESEARCH QUESTION</div><h4>CES 主问题正式收敛</h4><p>研究“不同手术方式的疗效差异”，不再把巨大型突出设为必须条件。</p></article>
+          <article class="task"><div class="tag">STUDY DESIGN</div><h4>完成研究骨架 V2</h4><p>形成研究对象、诊断标准、分组、随访、主要/次要结局及影像变量框架。</p></article>
+          <article class="task"><div class="tag">UPGRADE PATH</div><h4>明确单中心到多中心路线</h4><p>先快速完成单中心研究，再用多中心和外院独立测试研究融合获益异质性。</p></article>
+          <article class="task"><div class="tag">STATISTICS</div><h4>主文献 Results 阅读完成</h4><p>已覆盖 Table 1、单/多因素 Logistic、OR/95%CI 与 ROC；待完成 Discussion。</p></article>
         </div>
       </div>
     </section>
@@ -196,10 +203,10 @@
         <p>临床优势不是需要抛弃的起点，而是进入神经工程临床转化的差异化资产。</p>
       </div>
       <div class="timeline">
-        <article class="phase active"><span class="dot"></span><small>现在—2026.09</small><h3>科研打底</h3><p>完成数据分析基础、主文献精读、导师与课题选择，建立可复用科研流程。</p></article>
-        <article class="phase"><span class="dot"></span><small>硕士早期</small><h3>稳定产出</h3><p>完成短周期论文与临床数据库研究，掌握回归分析和规范论文写作。</p></article>
-        <article class="phase"><span class="dot"></span><small>硕士中后期</small><h3>方向融合</h3><p>把脊柱临床问题与 EMG、运动功能评估、AI 预测或神经接口连接。</p></article>
-        <article class="phase"><span class="dot"></span><small>长期目标</small><h3>临床转化</h3><p>进入神经工程与 BCI 团队，参与从信号、算法到临床验证的完整链条。</p></article>
+        <article class="phase active"><span class="dot"></span><small>现在—约 08.20</small><h3>可行性验证</h3><p>完成 CES 文献侦察、病例数量与关键变量核查，带着明确问题参加首次科研谈话。</p></article>
+        <article class="phase"><span class="dot"></span><small>2026.08—硕士早期</small><h3>单中心首篇</h3><p>建立 2021—2025 队列，比较单纯减压/髓核摘除与 TLIF 的疗效和代价。</p></article>
+        <article class="phase"><span class="dot"></span><small>硕士中后期</small><h3>多中心升级</h3><p>增加样本与外院独立测试，回答“哪些 CES 患者需要融合、哪些减压已足够”。</p></article>
+        <article class="phase"><span class="dot"></span><small>长期目标</small><h3>神经技术转化</h3><p>把脊柱神经损伤、功能结局、神经信号与临床决策能力迁移到神经工程和 BCI。</p></article>
       </div>
     </section>
 
@@ -209,10 +216,12 @@
         <p>只记录已经发生、能够复述或能够用于下一步工作的成果。</p>
       </div>
       <div class="milestones">
-        <article class="milestone"><span class="check">✓</span><div><h3>完成首篇真实主文献第一轮阅读</h3><p>明确研究对象、结局、MCID 阈值、随访与 Logistic 回归框架。</p></div></article>
-        <article class="milestone"><span class="check">✓</span><div><h3>形成缺失数据审计审核能力</h3><p>坚持不删除、不填补、不修改原始 DataFrame 的安全约束。</p></div></article>
-        <article class="milestone"><span class="check">✓</span><div><h3>建立神经源性 EMG 基础链条</h3><p>失神经 → 自发电活动；侧支芽生 → 运动单位增大；严重损伤 → 募集减少。</p></div></article>
-        <article class="milestone"><span class="check">✓</span><div><h3>建立长期课题候选池</h3><p>保留临床决策导向、短周期优先并兼顾神经工程转轨价值的研究方向。</p></div></article>
+        <article class="milestone"><span class="check">✓</span><div><h3>确定硕士导师与西京平台</h3><p>科研资源和执行场景从“不确定”转为可围绕真实数据规划。</p></div></article>
+        <article class="milestone"><span class="check">✓</span><div><h3>CES 研究问题完成纠偏</h3><p>从“巨大型突出限定研究”转为“不同术式疗效比较”，提高样本与临床决策价值。</p></div></article>
+        <article class="milestone"><span class="check">✓</span><div><h3>形成 CES 研究骨架 V2</h3><p>纳入 CES-I/CES-R、术式决策原因、发病至手术时间及神经功能恢复结局。</p></div></article>
+        <article class="milestone"><span class="check">✓</span><div><h3>主文献进入最后一环</h3><p>摘要、Methods 与 Results 已完成；仅余 Discussion、局限性和完整借鉴总结。</p></div></article>
+        <article class="milestone"><span class="check">✓</span><div><h3>掌握 EMG 急慢性区分</h3><p>急/亚急性失神经看自发电活动；慢性再支配看运动单位增大、时限延长与募集变化。</p></div></article>
+        <article class="milestone"><span class="check">✓</span><div><h3>识别真实数据约束</h3><p>术前 ODI 可能不完整；后续设计先核查数据，不把理想变量默认成可用变量。</p></div></article>
       </div>
     </section>
   </main>
